@@ -5,7 +5,7 @@ using MoviesBackend.Services;
 using MoviesBackend.Interfaces;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/movies")]
 public class MoviesController : ControllerBase
 {
     private readonly IMoviesService _service;

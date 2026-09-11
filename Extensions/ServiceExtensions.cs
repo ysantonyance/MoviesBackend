@@ -9,12 +9,6 @@ namespace MoviesBackend.Services.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
         {
-            var connectionString = configuration.GetConnectionString("MoviesContext") 
-                ?? throw new InvalidOperationException("Connection string 'MoviesContext' not found.");
-
-            services.AddDbContext<MoviesContext>(options =>
-                options.UseSqlServer(connectionString));
-
             services.AddTransient<IMoviesService, MoviesService>();
             services.AddTransient<IRepository<Movie>, MoviesRepository>();
 

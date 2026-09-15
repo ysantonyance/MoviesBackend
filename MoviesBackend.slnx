@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="../MoviesBackend.BLL/MoviesBackend.BLL.csproj" Id="15fefbd6-cd63-43bf-8526-91843079b49d" />
+  <Project Path="../MoviesBackend.DAL/MoviesBackend.DAL.csproj" Id="cfa2f310-30a2-4c32-a0ad-5d4071751d02" />
   <Project Path="MoviesBackend.csproj" />
 </Solution>

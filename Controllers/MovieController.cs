@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using MoviesBackend.Entities;
 using MoviesBackend.Services;
 using MoviesBackend.Interfaces;
-
+using MoviesBackend.BLL.DTOs;
 [ApiController]
 [Route("api/movies")]
 public class MoviesController : ControllerBase
@@ -40,7 +40,7 @@ public class MoviesController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(Movie movies)
+    public async Task<IActionResult> Create(MovieDTO movies)
     {
         if (ModelState.IsValid)
         {
@@ -51,7 +51,7 @@ public class MoviesController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> Update(int? id, Movie movies)
+    public async Task<IActionResult> Update(int? id, MovieDTO movies)
     {
         if (id != movies.Id)
         {

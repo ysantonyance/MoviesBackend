@@ -14,4 +14,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.12" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MoviesBackend.BLL\MoviesBackend.BLL.csproj" />
+    <ProjectReference Include="..\MoviesBackend.DAL\MoviesBackend.DAL.csproj" />
+  </ItemGroup>
+
 </Project>
